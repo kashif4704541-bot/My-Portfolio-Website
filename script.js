@@ -12,7 +12,7 @@ function toggleMenu() {
 
 function downloadFile() {
     const link = document.createElement("a");
-    link.href = "./static/ShaheerKashif_Resume.pdf";
+    link.href = "./static/My_Resume.pdf";
     link.download = "ShaheerKashif_Resume.pdf"; // optional filename
     document.body.appendChild(link);
     link.click();
@@ -25,4 +25,5 @@ function downloadFile() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+
     }
