@@ -1,0 +1,596 @@
+/* ========== Reset Default Spacing ========== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== Header Styling ========== */
+header {
+    /* background-color: rgb(35, 32, 44); */
+    background-color: rgb(18, 18, 62);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    height: auto;
+    /* change from 40px to auto */
+    flex-wrap: wrap;
+    /* allow wrapping when needed */
+    position: relative;
+    
+
+}
+
+/* ========== Body Styling ========== */
+body {
+    /* background-color: rgb(17, 15, 24); */
+    background-color: rgb(0, 0, 33);
+    color: #E6E6E6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========== Logo Text (Left Side of Header) ========== */
+.left {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 0 3px #ffffff33;
+}
+
+/* ========== Navigation Menu ========== */
+.desktop-nav {
+  display: flex;
+}
+
+.desktop-nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.desktop-nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.desktop-nav ul li a:hover {
+  color: #9F57FF;
+}
+
+.dropdown-menu {
+    display: none;
+  position: absolute;
+  top: 70px;
+  right: 40px; /* stay aligned to nav button */
+  background-color: #1d1b25;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 100px; /* <<< limit width */
+  z-index: 100;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dropdown-menu ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #9F57FF;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #E6E6E6;
+  cursor: pointer;
+  position: absolute;
+  right: 17px;
+  top: 8px;
+}
+
+/* ========== Hero Section Layout ========== */
+.first {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 160px;
+}
+
+/* ========== Left Side Content (Text) ========== */
+.leftSection {
+    width: 43%;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.leftSection h2 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 59px;
+}
+
+/* ========== Name Line Styling ========== */
+.name-line {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.orange-line {
+    width: 85px;
+    height: 2px;
+    background: linear-gradient(60deg, #00bfff, #a855f7);
+    margin-top: 18px;
+}
+
+.leftSection h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.purple {
+    color: #9F57FF;
+    font-weight: 600;
+}
+
+/* ========== Typing Animation Text ========== */
+#element {
+    font-size: 34px;
+    font-weight: 500;
+    display: inline;
+    margin-left: 60px;
+}
+
+.typing-container {
+    margin-top: 20px;
+}
+
+/* ========== Buttons ========== */
+.btn {
+    display: flex;
+    flex-direction: row;
+    /* buttons in a row */
+    flex-wrap: wrap;
+    /* allow wrap only if space is too small */
+    gap: 20px;
+    /* spacing between buttons */
+    margin-top: 60px;
+    justify-content: center;
+    /* center-align buttons */
+}
+
+.primary_btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background-color: #ff4d4d;
+    color: whitesmoke;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
+
+}
+
+.secondary_btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 33);
+    border: 3px solid #ff4d4d;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: whitesmoke;
+}
+
+/* ========== Right Side Content (Image) ========== */
+.rightSection {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSection img {
+    width: 360px;
+    height: 360px;
+    
+
+}
+
+/* ========== Section line ========== */
+.section-line {
+    border: none;
+    height: 2px;
+    background: rgb(75, 75, 204);
+    margin: 40px 0;
+    width: 100%;
+    margin-top: 162px;
+}
+/* ========== About me ========== */
+.about-me{
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.about-column {
+    width: 45%;
+    min-width: 280px;
+}
+.head2_1,.head2_2{
+    margin-left: 30px;
+    
+}
+
+
+#my-info,
+#my-skills {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* ========== My Projects ========== */
+.my-projects{
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.third{
+    height: 70vh;
+}
+.third .box {
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.third .vertical{
+    height: 90px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+}
+.vertical .pdf{
+    width: 20px;
+    height: 20px;
+    border-radius: 18px;
+    position: relative;
+    top: -100px;
+  left: -6px;
+}
+.vertical .vertical-title{
+    position: relative;
+    top: 75px;
+}
+.vertical .vertical-desc{
+    color: gray;
+    font-size: 12px;
+    width: 150px;
+    position: relative;
+    top: 95px;
+}
+
+/* ========== Contact Page ========== */
+
+
+.contact-section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.fourth h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  color: #aaa;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a40;
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6600;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+
+.contact-info {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #e6e6e6;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff6600;
+}
+.social-links > a > img{
+    height: 14px;
+    border-radius: 60%;
+}
+
+
+/* ===========================================
+   MEDIA QUERIES - MAKE SITE RESPONSIVE
+=========================================== */
+
+/* ========== For Tablets and Smaller Screens (up to 1024px) ========== */
+@media (max-width: 1024px) {
+    .first {
+        margin: 40px 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftSection,
+    .rightSection {
+        width: 100%;
+        padding: 20px;
+    }
+    .leftSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightSection {
+        margin-top: 30px;
+    }
+
+    .rightSection img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #element {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+    .third .vertical{
+        height: unset;
+    }
+    .vertical-title, .vertical-desc{
+        left: 45px;
+    }
+    .vertical .pdf{
+        top: 24px;
+  left: -54px;
+    }
+    
+}
+
+/* ========== For Mobile Devices (up to 768px) ========== */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .desktop-nav {
+    display: none;
+  }
+
+
+
+    .hamburger {
+        display: block;        
+    }
+
+    #nav-menu {
+        display: none;
+        width: 23%;
+        
+    }
+
+    #nav-menu.show {
+        display: block;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .first {
+        margin: 30px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftSection {
+        padding: 10px;
+    }
+
+    .leftSection h2,
+    .leftSection h3,
+    #element {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .rightSection img {
+        width: 260px;
+        height: 260px;
+    }
+    .third{
+      height: 640px;
+    }
+
+    .contact-form{
+      display: flex;
+      align-items: center;
+    }
+    .contact-form input{
+      width:60vw;
+      
+    }
+    .contact-form textarea{
+      width: 60vw;
+    }
+    .contact-form button{
+      width: 20vw;
+    }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+
+}
+
+
+/* ========== For Small Phones (up to 480px) ========== */
+@media (max-width: 480px) {
+    .left {
+        font-size: 1.2rem;
+    }
+    .vertical-title, .vertical-desc {
+    left: 31px;
+  }
+  .vertical .pdf{
+    left: -40px;
+  }
+
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .leftSection h2 {
+        font-size: 28px;
+    }
+
+    .leftSection h3 {
+        font-size: 22px;
+    }
+
+    #element {
+        font-size: 20px;
+    }
+
+    .rightSection img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .primary_btn,
+    .secondary_btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .dropdown-menu {
+    right: 10px;
+    left: auto; /* prevent stretching */
+    width: 180px; /* still controlled */
+  }
+
+
+}
