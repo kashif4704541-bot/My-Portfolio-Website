@@ -7,23 +7,19 @@ var typed = new Typed('#element', {
 
 function toggleMenu() {
     const menu = document.getElementById("nav-menu");
-    menu.classList.toggle("show");
+    // menu.classList.toggle("show");
+    menu.style.display = menu.style.display === "block" ? "none" : "block"; 
+}
+function closeMenu() {
+    document.getElementById("nav-menu").style.display = "none";
 }
 
 function downloadFile() {
     const link = document.createElement("a");
-    link.href = "./static/My_Resume.pdf";
+    link.href = "./static/ShaheerKashif_Resume.pdf";
     link.download = "ShaheerKashif_Resume.pdf"; // optional filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
-function downloadFile() {
-        const link = document.createElement("a");
-        link.href = "/static/Python_Developer_Roadmap_2025.pdf";
-        link.download = "Python_Developer_Roadmap_2025.pdf"; // Optional: filename for download
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
 
-    }
