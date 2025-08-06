@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* ========== Header Styling ========== */
 header {
     /* background-color: rgb(35, 32, 44); */
